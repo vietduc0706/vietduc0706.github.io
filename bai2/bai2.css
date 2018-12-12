@@ -1,0 +1,16 @@
+* {
+    font-family: Arial;
+
+}
+h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.dienthongtin {
+    font-style: bold;
+    text-transform: underline;
+}
