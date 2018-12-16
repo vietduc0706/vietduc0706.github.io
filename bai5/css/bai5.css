@@ -35,5 +35,5 @@ li {
 }
 
 img.product:hover { 
-    border-radius : 100%;
+    opacity: 0.5;
 }
