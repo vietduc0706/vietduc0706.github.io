@@ -7,88 +7,239 @@
     <style>
         .container {
             width: 100%;
-            overflow: auto;
-            border: 5px solid blue;
+            display: flex;
             padding: 10px;
             }
         .area {
             box-sizing: border-box;
             border: 1px solid skyblue;
             padding: 10px;
+            margin: 10px;
             }
-        #vung1 {
-            width: 40%;
-            height: 300px;
-            float: left;
-            margin-left: 2em;
+        .container#khung1 {
+            height: 200px;
             }
-        #vung2 {
-            width: 40%;
+        .container#khung2 {
             height: 300px;
-            float: right;
-            margin-right: 2em;
             }
-        #vung3 {
-            width: 20%;
-            height: 300px;
-            float: left;
-            margin-left: 2em;
-            }    
-        #vung4 {
-            width: 20%;
-            height: 300px;
-            margin-right: 2em;
+        .container#khung3 {
+            height: 100px;
             }
-        #vung5 {
-            width: 20%;
+        .container#khung4 {
             height: 300px;
-            margin-right: 2em;
             }
-        #vung6 {
-            width: 20%;
-            height: 300px;
-            margin-right: 2em;
+        .container#khung5 {
+            height: 900px;
             }
-        #vung7 {
-            width: 20%;
-            height: 300px;
-            margin-right: 2em;
+        .container#khung6 {
+            height: 200px;
+            padding: 0;
             }
-        #vung8 {
-            width: 20%;
-            height: 300px;
-            margin-right: 2em;
+        .container#khung7 {
+            height: 200px;
+            padding: 0;
             }
-        #vung9 {
-            width: 20%;
-            height: 300px;
-            float: right;
-            margin-right: 2em;
+        .area#vung1 {
+            flex: 1;
             }
+        .area#vung2 {
+            flex: 1;
+            }
+        .area#vung3 {
+            flex: 1;
+            }
+        .column#cot1 {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            }
+        .column#cot2 {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            }
+        .area#vung4 {
+            flex: 1;
+            }
+        .area#vung5 {
+            flex: 1;
+            }
+        .area#vung6 {
+            flex: 1;
+            }
+        .area#vung7 {
+            flex: 1;
+            }
+        .area#vung8 {
+            flex: 1;
+            }
+        .container#khung3 {
+            justify-content: center;
+            }
+        .area#vung9 {
+            flex: 0.5;
+            }
+        .area#vung10 {
+            flex: 1;
+        }
+        .area#vung11 {
+            flex: 1.5;
+        }
+        .area#vung12 {
+            flex: 2;
+        }
+        .column#cot3 {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            }
+        .column#cot4 {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            }
+        .column#cot5 {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            }
+        .area#vung13 {
+            flex: 1;
+            }
+        .area#vung14 {
+            flex: 1;
+            }
+        .area#vung15 {
+            flex: 1;
+            }
+        .area#vung16 {
+            flex: 1;
+            }
+        .area#vung17 {
+            flex: 1.5;
+            }
+        .area#vung18 {
+            flex: 1;
+        }
+        .area#vung19 {
+            flex: 1.5;
+        }
+        .area#vung20 {
+            flex: 2;
+        }
+        .area#vung21 {
+            flex: 1;
+            margin: 0;
+            background-color: rgb(208, 255, 0);
+            border: 0;
+        }
+        .area#vung22 {
+            flex: 1;
+            margin: 0;
+            background-color: rgb(255, 94, 0);
+            border: 0;
+        }
+        .area#vung23 {
+            flex: 1;
+            margin: 0;
+            background-color: rgb(238, 255, 0);
+            border: 0;
+        }
+        .area#vung24 {
+            flex: 1;
+            margin: 0;
+            background-color: rgb(0, 60, 255);
+            border: 0;
+        }
+        .area#vung25 {
+            flex: 1;
+            margin: 0;
+            background-color: rgb(225, 0, 255);
+            border: 0;
+        }
+        .area#vung26 {
+            flex: 1;
+            margin: 0;
+            background-color: rgb(255, 0, 157);
+            border: 0;
+        }
+        .container#khung7 {
+            justify-content: center;
+        }
+        .area#vung27 {
+            flex: 0.15;
+            margin: 0;
+            background-color: rgb(0, 255, 106);
+            border: 0;
+        }
+        .area#vung28 {
+            flex: 0.15;
+            margin: 0;
+            background-color: rgb(157, 255, 0);
+            border: 0;
+        }
+        .area#vung29 {
+            flex: 0.15;
+            margin: 0;
+            background-color: rgb(255, 0, 98);
+            border: 0;
+        }
     </style>
 </head>
 <body>
-    <div class= "container">
+    <div class= "container" id="khung1">
         <div class="area" id="vung1"> Vùng 1 </div>
         <div class="area" id="vung2"> Vùng 2 </div>
+    </div>
+    <div class="container" id="khung2">
         <div class="area" id="vung3"> Vùng 3 </div>
-        <div class="area" id="vung4"> Vùng 4 </div>
-        <div class="area" id="vung5"> Vùng 5 </div>
-        <div class="area" id="vung6"> Vùng 6 </div>
-        <div class="area" id="vung7"> Vùng 7 </div>
+        <div class="column" id="cot1">
+            <div class="area" id="vung4"> Vùng 4 </div>
+            <div class="area" id="vung5"> Vùng 5 </div>
+        </div>
+        <div class="column" id="cot2">
+            <div class="area" id="vung6"> Vùng 6 </div>
+            <div class="area" id="vung7"> Vùng 7 </div>
+        </div>
         <div class="area" id="vung8"> Vùng 8 </div>
+    </div>
+    <div class="container" id="khung3">
         <div class="area" id="vung9"> Vùng 9 </div>
+    </div>
+    <div class="container" id="khung4">
         <div class="area" id="vung10"> Vùng 10 </div>
         <div class="area" id="vung11"> Vùng 11 </div>
         <div class="area" id="vung12"> Vùng 12 </div>
-        <div class="area" id="vung13"> Vùng 13 </div>
-        <div class="area" id="vung14"> Vùng 14 </div>
-        <div class="area" id="vung15"> Vùng 15 </div>
-        <div class="area" id="vung16"> Vùng 16 </div>
-        <div class="area" id="vung17"> Vùng 17 </div>
-        <div class="area" id="vung18"> Vùng 18 </div>
-        <div class="area" id="vung19"> Vùng 19 </div>
-        <div class="area" id="vung20"> Vùng 20 </div>
+    </div>
+    <div class="container" id="khung5">
+        <div class="column" id="cot3">
+            <div class="area" id="vung13"> Vùng 13 </div>
+            <div class="area" id="vung14"> Vùng 14 </div>
+            <div class="area" id="vung15"> Vùng 15 </div>
+        </div>
+        <div class="column" id="cot4">
+            <div class="area" id="vung16"> Vùng 16 </div>
+            <div class="area" id="vung17"> Vùng 17 </div>
+        </div>
+        <div class="column" id="cot5">
+            <div class="area" id="vung18"> Vùng 18 </div>
+            <div class="area" id="vung19"> Vùng 19 </div>
+            <div class="area" id="vung20"> Vùng 20 </div>
+        </div>
+    </div>    
+    <div class="container" id="khung6"> 
+        <div class="area" id="vung21"> Vùng 21 </div>
+        <div class="area" id="vung22"> Vùng 22 </div>
+        <div class="area" id="vung23"> Vùng 23 </div>
+        <div class="area" id="vung24"> Vùng 24 </div>
+        <div class="area" id="vung25"> Vùng 25 </div>
+        <div class="area" id="vung26"> Vùng 26 </div>
+    </div>
+    <div class="container" id="khung7">
+        <div class="area" id="vung27"> Vùng 27 </div>
+        <div class="area" id="vung28"> Vùng 28 </div>
+        <div class="area" id="vung29"> Vùng 29 </div>
+    </div>
     </div>
 </body>
 </html>
