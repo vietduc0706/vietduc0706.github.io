@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    }
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+    }
+h1{
+    background-color: skyblue;
+    text-align: center;
+    animation: title 5s ease;
+    }
+.product {
+    float: left;
+    width: 33.33%;
+    padding-top: 5px;
+    padding-left: 5px;
+    }
+img.product:hover { 
+    opacity: 0.5;
+    }
+#credit {
+    float: right;
+    overflow: hidden;
+    width: 450px;
+    text-align: right;
+    }
+@keyframes copyright {
+    0%, 100% {opacity: 0}
+    50% {opacity: 1; transform: translate(-150px)}
+    100% {transform: translate(-450px)}
+    }
+#copyright {
+    position: relative;
+        right: -150px;
+    animation: copyright 5s ease-out infinite;
+    }
