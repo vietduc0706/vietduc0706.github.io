@@ -11,7 +11,7 @@
 h1{
     background-color: skyblue;
     text-align: center;
-    animation: title 5s ease;
+    animation: title 5s ease infinite;
     }
 .product {
     float: left;
