@@ -17,7 +17,8 @@ h1{
     float: left;
     width: 33.33%;
     padding-top: 5px;
-    padding-left: 5px;
+    padding-right: 2.5px;
+    padding-left: 2.5px
     }
 img.product:hover { 
     opacity: 0.5;
