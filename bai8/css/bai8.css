@@ -54,42 +54,42 @@ body {
     animation: move_nine 6s ease-in-out forwards;
     animation-direction: reverse;
     }
-.move_pig0 {
+/* .move_pig0 {
     width: 15%;
     position: absolute;
         bottom: 1.5%;
         right: -15%;
     animation: move_pig 5s ease-in 7.5s forwards;
-    }
+    } */
 .move_pig1 {
     width: 15%;
     position: absolute;
         bottom: 2.5%;
         right: -15%;
-    animation: move_pig 10s ease-in 11.5s infinite;
+    animation: move_pig 10s ease-in 5.5s infinite;
     }
 .move_pig2 {
     width: 15%;
     position: absolute;
         bottom: 2.5%;
         right: -15%;
-    animation: move_pig 10s ease-in 13s infinite;
+    animation: move_pig 10s ease-in 7s infinite;
     }
 .move_pig3 {
     width: 15%;
     position: absolute;
         bottom: 2.5%;
         right: -15%;
-    animation: move_pig 10s ease-in 14.5s infinite;
+    animation: move_pig 10s ease-in 8.5s infinite;
     }
 .pig {
     width: 100%;
     animation: boom_pig 5.5s linear infinite;
     animation-direction: alternate;
     }
-.pig_special {
+/* .pig_special {
         width: 100%;
-        }
+        } */
 @keyframes move_pig {
     0% {
         right: -15%;
