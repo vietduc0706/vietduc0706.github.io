@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bài 12</title>
+        <style>
+            body {
+                display: inline;
+                }
+            </style>
+        <script>
+
+            // Bài 1
+            let bai1 = (number) => {
+                document.write ("<p> Bình phương của " + number + " là: " + number*number + "</p>");
+                }
+            // Test case bài 2
+            // bai1(3)
+            // bai1(5)
+
+            // Bài 2
+            let bai2 = (a, b, c) => {
+                var bien2 = 3*a+2*b-c;
+                document.write (`<p> Bình phương của (3 x ${a} + 2 x ${b} - ${c}) là: ${bien2} </p>`);
+                }
+            // Test case bài 2
+            // bai2(3, 5, 7)
+            // bai2(1, 2, 4)
+
+            // Bài 3
+            let bai3 = (string) => {
+                var bien3 = string.slice(0,9);
+                document.write (`<p> Rút gọn 10 ký tự đầu tiên của chuỗi là: "${bien3}... " </p>`);
+                }
+            // Test case bài 3
+            // bai3("TechMaster TechMaster TechMaster")
+            // bai3("Học là có việc Học là có việc")
+            
+            // Bài 4
+            let bai4 = (string) => {
+                var bien41 = string.toUpperCase().slice(0,1);
+                var bien42 = string.slice(1).toLowerCase();
+                var bien4 = bien41 + bien42;
+                document.write (`<p> Chuỗi mới chỉ viết hoa từ đầu tiên là: "${bien4}" </p>`);
+                }
+            // Test case bài 4
+            // bai4("TechMaster TechMaster TechMaster")
+            // bai4("Học là có việc Học là có việc")
+
+            // Bài 5
+            let bai5 = (array) => {
+                var bien5 = Math.min.apply(Math, array);
+                document.write (`<p> Số nhỏ nhất trong mảng là: ${bien5} <p/>`);
+                } 
+            // Test case bài 5
+            // bai5([10, 6, 8, 4, 2])
+            // bai5([7, 9, 3, 1, 5])
+
+            // Bài 6
+            let bai6 = (array) => {
+                var bien6 = array.sort();
+                document.write (`<p> Thứ tự mọi người sắp xếp theo bảng chữ cái: ${bien6} </p>`);
+                } 
+            // Test case bài 6
+            // bai6([" Cường", " Tùng", " Chi", " Huy", " Khoa"])
+            // bai6([" Bill Gates", " Steve Jobs", " Elon Musk", " Mark Zuckerberg", " Jeff Bezos"])
+
+            // Bài 7
+                var teacher = {firstName: "Cô giáo", lastName: "Thảo", age: 30, say: function(){}};
+                var student = {firstName: "Việt", lastName: "Đức", age: 15, say: function(){}};
+                var parent = {firstName: "Mẹ", lastName: "Maria Ozawa", age: 35, say: function(){}};        
+                var aboutMe = function(){
+                    document.write (`<p> Xin chào, tôi là ${this.firstName} ${this.lastName}. Năm nay tôi ${this.age} tuổi.</p>`);
+                    }
+                teacher.say = aboutMe;
+                student.say = aboutMe;
+                parent.say = aboutMe; 
+            // Test case bài 7
+            // teacher.say()
+            // student.say()
+            // parent.say()
+            </script>
+        </head>
+    <body>
+        
+    </body>
