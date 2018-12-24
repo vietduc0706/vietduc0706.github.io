@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bài 14</title>
+        <style>
+            h4 {
+                text-align: center;
+                }
+            </style>
+        <script>
+
+            // Bài 1
+            let bai1 = (n1, n2) => {
+                if (typeof n1 == "number") {
+                    document.write (`<p> ${n1} là một số </p>`);
+                    } else {
+                        document.write (`<p> ${n1} không phải là một số </p>`);
+                        }
+                if (typeof n2 == "number") {
+                    document.write (`<p> ${n2} là một số </p>`);
+                    } else {
+                        document.write (`<p> ${n2} không phải là một số </p>`);
+                        }
+                if (typeof n1 == typeof n2 == "number") {
+                    if (n1 == n2) {
+                        document.write (`<p> ${n1} bằng ${n2} </p>`);
+                        } else {
+                            if (n1 > n2) {
+                                document.write (`<p> ${n1} lớn hơn ${n2} </p>`);
+                                }
+                            if (n1 > n2) {
+                            document.write (`<p> ${n1} lớn hơn ${n2} </p>`);
+                            }
+                            }
+                    }
+                }
+            // Test case bài 1
+            // bai1(5, 10)
+            // bai1(10, 10)
+            // bai1("string", 10)
+
+            
+        
+            </script>
+        </head>
+        <body>
+            <h4> Xin mời xem mã nguồn để chạy test bài tập này hoặc nhập các test case bên dưới vào phần Console. </h4>
+            </body>
