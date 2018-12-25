@@ -66,15 +66,15 @@
             // bai6([" Bill Gates", " Steve Jobs", " Elon Musk", " Mark Zuckerberg", " Jeff Bezos"])
 
             // Bài 7
-                var teacher = {firstName: "Cô giáo", lastName: "Thảo", age: 30, say: function(){}};
-                var student = {firstName: "Việt", lastName: "Đức", age: 15, say: function(){}};
-                var parent = {firstName: "Maria", lastName: "Ozawa", age: 35, say: function(){}};        
-                var aboutMe = function(){
-                    document.write (`<p> Xin chào, tôi là ${this.firstName} ${this.lastName}. Năm nay tôi ${this.age} tuổi.</p>`);
-                    }
-                teacher.say = aboutMe;
-                student.say = aboutMe;
-                parent.say = aboutMe; 
+            var teacher = {firstName: "Cô giáo", lastName: "Thảo", age: 30, say: function(){}};
+            var student = {firstName: "Việt", lastName: "Đức", age: 15, say: function(){}};
+            var parent = {firstName: "Maria", lastName: "Ozawa", age: 35, say: function(){}};        
+            var aboutMe = function(){
+                document.write (`<p> Xin chào, tôi là ${this.firstName} ${this.lastName}. Năm nay tôi ${this.age} tuổi.</p>`);
+                }
+            teacher.say = aboutMe;
+            student.say = aboutMe;
+            parent.say = aboutMe; 
             // Test case bài 7
             // teacher.say()
             // student.say()

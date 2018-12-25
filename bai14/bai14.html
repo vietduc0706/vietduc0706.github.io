@@ -22,28 +22,75 @@
                     } else {
                         document.write (`<p> ${n2} không phải là một số </p>`);
                         }
-                if (typeof n1 == typeof n2 == "number") {
+                if (typeof n1 == "number" && typeof n2 == "number") {
+                    document.write (`<span> ${n1} và ${n2} cùng một kiểu </span>`);
                     if (n1 == n2) {
-                        document.write (`<p> ${n1} bằng ${n2} </p>`);
-                        } else {
-                            if (n1 > n2) {
-                                document.write (`<p> ${n1} lớn hơn ${n2} </p>`);
-                                }
-                            if (n1 > n2) {
-                            document.write (`<p> ${n1} lớn hơn ${n2} </p>`);
-                            }
-                            }
-                    }
+                        document.write (`<span>và ${n1} bằng ${n2} </span>`);
+                        }
+                    if (n1 < n2) {
+                        document.write (`<span>và ${n1} nhỏ hơn ${n2} </span>`);
+                        }
+                    if (n1 > n2) {
+                        document.write (`<span> ${n1} lớn hơn ${n2} </span>`);
+                        }
+                    } else {
+                        document.write (`<span> ${n1} và ${n2} không cùng là kiểu số </span>`);
+                        }
                 }
             // Test case bài 1
             // bai1(5, 10)
             // bai1(10, 10)
-            // bai1("string", 10)
+            // bai1("TechMaster", 10)
 
-            
+            // Bài 2
+            var bien2 = 1;
+            let bai2 = (number) => {
+                if (number > 0 && (number % 2 == 1 || number % 2 == 0)) {
+                    for (var i=1; i<=number; i=i+1){
+                        bien1 = bien1 * i;
+                        }
+                    document.write (`<p> ${number} là số nguyên dương và (${number}!) là: ${bien2} </p>`);
+                    } else {
+                        document.write (`<p> ${number} không phải là số nguyên dương </p>`);
+                    }
+                }
+            // Test case bài 2
+            // bai2(5)
+            // bai2(10.5)
+            // bai2(-5)
         
+            // Bài 3
+            let bai3 = (array) => {
+                var bien3 = array.sort(function(a, b){return a - b});
+                document.write (`<span> Mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần là:</span>`);
+                for (var i=bien3.length - 1; i>=0; i=i-1) {
+                    if (bien3[i] % 2 == 0) {
+                        document.write (` ${array[i]},`);
+                        }
+                    }
+                }
+            // Test case bài 3
+            // bai3([10, 9, 8, 1, 2])
+            // bai3([7, 6, 3, 4, 5])
+            // bai3([-2, 12, 3, 8, 4])
+
+            // Bài 4
+            var user = {username: "username", password: "secret", confirm: "secret", kiemtra: function(){}};
+            var bai4 = function (){
+                if (user.username.length < 20 && user.password.length > 5 && user.password.length < 32 && user.password === user.confirm) {
+                    document.write (`<p> Thông tin đăng ký tài khoản hợp lệ </p>`);
+                    } else {
+                        document.write (`<p> Thông tin đăng ký tài khoản không hợp lệ </p>`);
+                        }
+                }
+            user.kiemtra = bai4;
+            // Test case bài 4
+            // bai4 ("techmaster", "hoclacoviec", "hoclacoviec")
+            // bai4 ("123456", "hoclacoviec", "hoclacoviec")
+            // bai4 ("techmaster", "hoclacoviec", "123456")
+
             </script>
         </head>
         <body>
-            <h4> Xin mời xem mã nguồn để chạy test bài tập này hoặc nhập các test case bên dưới vào phần Console. </h4>
+            <h4> Xin mời xem mã nguồn để chấm điểm bài tập này. </h4>
             </body>
