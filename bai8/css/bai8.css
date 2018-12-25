@@ -154,7 +154,7 @@ body {
         transform: rotate(180deg);
         }        
     100% {
-        right: 115%;
+        right: 125%;
         }
     }
 @keyframes fade_in_text {
