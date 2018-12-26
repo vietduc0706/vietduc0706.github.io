@@ -75,15 +75,29 @@
             // bai3([-2, 12, 3, 8, 4])
 
             // Bài 4
-            var user = {username: "username", password: "secret", confirm: "secret", kiemtra: function(){}};
-            var bai4 = function (){
-                if (user.username.length < 20 && user.password.length > 5 && user.password.length < 32 && user.password === user.confirm) {
+            let bai4 = (account) => {
+                var account = {username: "username", password: "secret", confirm: "secret"};
+                if (account.username.length < 20 && account.password.length > 5 && account.password.length < 32 && account.password === account.confirm) {
                     document.write (`<p> Thông tin đăng ký tài khoản hợp lệ </p>`);
                     } else {
                         document.write (`<p> Thông tin đăng ký tài khoản không hợp lệ </p>`);
                         }
                 }
-            user.kiemtra = bai4;
+            // Test case bài 4
+            // bai4("techmaster", "hoclacoviec", "hoclacoviec")
+            // bai4("123456", "hoclacoviec", "hoclacoviec")
+            // bai4("techmaster", "hoclacoviec", "123456")
+
+
+            // var user = {username: "username", password: "secret", confirm: "secret", kiemtra: function(){}};
+            // var bai4 = function (){
+            //     if (user.username.length < 20 && user.password.length > 5 && user.password.length < 32 && user.password === user.confirm) {
+            //         document.write (`<p> Thông tin đăng ký tài khoản hợp lệ </p>`);
+            //         } else {
+            //             document.write (`<p> Thông tin đăng ký tài khoản không hợp lệ </p>`);
+            //             }
+            //     }
+            // user.kiemtra = bai4;
             // Test case bài 4
             // bai4 ("techmaster", "hoclacoviec", "hoclacoviec")
             // bai4 ("123456", "hoclacoviec", "hoclacoviec")
