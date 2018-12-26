@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bài 14</title>
+        <style>
+            h4 {
+                text-align: center;
+                }
+            </style>
+        <script>
+            
+            // Bài 1
+            let bai1 = () => {
+                var now = new Date();   // Lấy thời gian hiện tại
+                var date = now.getDate();   // Lấy ngày từ thời gian hiện tại
+                var month = now.getMonth() + 1;   // Lấy tháng từ thời gian hiện tại. Do tháng trong javascript tính từ 0 - 11 nên phải +1
+                var year = now.getFullYear();   // Lấy năm (đầy đủ 4 số) từ thời gian hiện tại 
+                if (month > 0 && month < 4) {
+                   document.write (`Hôm nay là ngày ${date} tháng ${month} năm ${year}. Cứ cho là mùa xuân đi :D`)
+                   }
+                if (month > 3 && month < 7) {
+                   document.write (`Hôm nay là ngày ${date} tháng ${month} năm ${year}. Cứ cho là mùa hè đi :D`)
+                   }
+                if (month > 6 && month < 10) {
+                   document.write (`Hôm nay là ngày ${date} tháng ${month} năm ${year}. Cứ cho là mùa thu đi :D`)
+                   }
+                if (month > 9 && month <= 12) {
+                   document.write (`Hôm nay là ngày ${date} tháng ${month} năm ${year}. Cứ cho là mùa đông đi :D`)
+                   }
+                }
+            // Test case bài 1
+            // bai1()
+
+            // Bài 2
+            let bai2 = (abc123) => {
+                var bien2 = (abc123.toString(10)).slice(0,9);
+                if ((abc123.toString(10)).length <= 10) {
+                    document.write (`<p> Nội dung vừa nhập là: "${bien2}" </p>`);
+                    }
+                if ((abc123.toString(10)).length > 10) {
+                    document.write (`<p> Nội dung vừa nhập là: "${bien2}... " </p>`);
+                    }
+                }
+            // Test case bài 2
+            // bai2("Đây là một chuỗi")
+            // bai2(9876543210)
+
+            // Bài 3
+            let bai3 = (diem) => {
+                if (diem >=0 && diem < 4) {
+                    document.write (`<p> Điểm F </p>`);
+                    } else {
+                        if (diem >= 4 && diem < 5.5) {
+                            document.write(`<p> Điểm D </p>`);
+                        } else {
+                            if (diem >= 5.5 && diem < 7) {
+                                document.write(`<p> Điểm C </p>`);
+                            } else {
+                                if (diem >= 7 && diem < 8.5) {
+                                    document.write(`<p> Điểm B </p>`);
+                                } else {
+                                    if (diem >= 8.5 && diem <= 10) {
+                                        document.write(`<p> Điểm A </p>`);
+                                    } else {
+                                        document.write(`<p> Điểm không hợp lệ </p>`);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            // Test case bài 3
+            // bai3(5.5)
+            // bai3(11)
+
+            // Bài 4
+            let bai4 = (nation) => {
+                switch (nation) {
+                    case "Vietnam":
+                        document.write(`<p> Xin chào </p>`);
+                        break;
+                    case "Germany":
+                        document.write(`<p> Hallo </p>`);
+                        break;
+                    case "Japan":
+                        document.write(`<p> こんにちは </p>`);
+                        break;
+                    case "Thailand":
+                        document.write(`<p> สวัสดี </p>`);
+                        break;
+                    case "Spain":
+                        document.write(`<p> Hola </p>`);
+                        break;
+                    }
+                }
+            // Test case bài 4
+            // bai4("Vietnam")
+            // bai4("Japan")
+
+            // Bài 5
+            let bai5 = (array) => {
+                for (var i = 0; i <= array.length - 1; i++) {
+                    if (array[i] == true) {
+                        break;
+                        }
+                    }
+                document.write(`<p> Giá trị true xuất hiện lần đầu trong mảng ở vị trí thứ ${i+1} </p>`);
+                }
+            // Test case bài 5
+            // bai5([false, false, false, true, false, true, false, true])
+            // bai5([false, true, false, true, false, true, false, true])
+
+            // Bài 6
+            let bai6 = () => {
+                for (var i = 1; i<=100;) {
+                    while (i % 2 == 0) {
+                        document.write (`<p style = "color: green; display:inline"> ${i} </p>`);
+                        i++;
+                        }
+                    while(i % 2 == 1 ){
+                        document.write (`<p style = "color: red; display:inline"> ${i} </p>`);
+                        i++;
+                        }
+                    }
+                }
+            // Test case bài 6
+            // bai6()
+
+            </script>
+        </head>
+    <body>
+        <h4> Xin mời xem mã nguồn để chấm điểm bài tập này. </h4>
+        </body>
+
