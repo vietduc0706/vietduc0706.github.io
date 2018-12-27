@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bài 16</title>
+        <style>
+            h4 {
+                text-align: center;
+                }
+            </style>
+        <script>
+            
+            // Bài 1
+            let bai1 = (n) => {
+                for (var x=0; x<n; x++) {
+                    for(var y=0; y<=x; y++) {
+                        document.write("*");
+                        }
+                    document.write("<br>");
+                    }
+                }
+            // Test case bài 1
+            // bai1(5)
+            // bai1(10)
+
+            // Bài 2
+            let bai2 = (n, m) => {        
+                for (var i = 1; i <= n; i++) { 
+                    if (i == 1 || i == n) { 
+                        for (j = 1; j <= m; j++) { 
+                            document.write("*"); 
+                            }
+                        } else if (i >= 2 && i < n) {
+                                for (var k=1; k <= m; k++) {
+                                    if (k == 1 || k == m) {
+                                        document.write("*"); 
+                                        } else {
+                                            document.write("&nbsp;&nbsp;");
+                                            }					
+                                    }
+                            }
+                        document.write("<br>");
+				    }
+                }    
+            // Test case bài 2
+            // bai2(5,10)
+            // bai2(25,50)
+
+            // Bài 3
+            let bai3 = (n) => {
+    			for (var h = n; h >= 1 ; h--) {
+					if (h == n) {
+						for (i = 1; i <= 2 * n - 1; i++) {
+                            document.write ("*");
+                            }
+                        } else {
+                            for (var j = 1; j < n - h + 1; j++) {	
+                                document.write("&nbsp;&nbsp;");
+    							}		
+    						for (k = 1; k <= 2 * h - 1; k++) {
+								document.write("*");
+                                }
+					        }
+					    document.write("<br>");									
+				    }
+        		}
+            // Test case bài 3
+            // bai3(5)
+            // bai3(10)
+            
+            // Bài 4
+
+            // Test case bài 4
+            // bai4("Vietnam")
+            // bai4("Japan")
+
+            // Bài 5
+
+            // Test case bài 5
+            // bai5([false, false, false, true, false, true, false, true])
+            // bai5([false, true, false, true, false, true, false, true])
+
+            // Bài 6
+   
+            // Test case bài 6
+            // bai6()
+
+            </script>
+        </head>
+    <body>
+        <h4> Xin mời xem mã nguồn để chấm điểm bài tập này. </h4>
+        </body>
