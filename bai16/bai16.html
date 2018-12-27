@@ -69,21 +69,76 @@
             // bai3(10)
             
             // Bài 4
-
+            let bai4 = (n) => {
+                var dem=0;
+                    for (var i = 1; i <= n / 2 + 1; i++) {
+        				for (var k = i; k < 2 * i - 1; k++) {
+						    document.write ("&nbsp;&nbsp;");
+					        }
+                        document.write ("*");
+                        for (var j = i + 1; j < n - i + 1; j++) {
+                            dem++;
+                            document.write ("&nbsp;&nbsp;");
+                            }
+                            if (dem > 0) {
+                                document.write ("*");
+                                }
+                        document.write ("<br>");
+                        dem=0;
+                        }
+                    for (var k = n / 2 + 2; k < n + 1; k++) {
+        				for (var a = 1; a < n - k + 1; a++) {
+						    document.write ("&nbsp;&nbsp;");
+                            }
+                        document.write("*");
+				        for (var b = 1; b < 2 * k - n - 2; b++) {
+                            document.write ("&nbsp;&nbsp;");
+                            }
+                        document.write ("*");
+                        document.write("<br>");
+                        }			
+                }
             // Test case bài 4
-            // bai4("Vietnam")
-            // bai4("Japan")
+            // bai4(5)
+            // bai4(15)
 
             // Bài 5
-
-            // Test case bài 5
-            // bai5([false, false, false, true, false, true, false, true])
-            // bai5([false, true, false, true, false, true, false, true])
-
-            // Bài 6
-   
-            // Test case bài 6
-            // bai6()
+            let bai5 = (n) => {
+                var tam=0;
+                for (var i = 1; i <= n / 2; i++) {
+                    for (var k = 1; k <= i; k++) {
+                        document.write ("*");
+                        }
+                    for (var l = 1;l <= n - 2 * i; l++) {
+                        document.write ("&nbsp;&nbsp;");
+                        }
+                    for (var m = 1; m <= i; m++) {
+                        document.write ("*");
+                        }				      
+                    document.write ("<br>");                    
+                    }
+                for (var h = 1; h <= n; h++) {
+                    document.write ("*");
+                    }
+                document.write ("<BR>");
+                var dem=0;										
+                for (var j = Math.floor(n / 2) + 2; j <= n; j++) {
+                    for (var tam1 = 1; tam1 <= n - j + 1; tam1++) {									
+                        document.write ("*");
+                        }
+                    for (var tam2 = 1; tam2 <= 2 * dem + 1; tam2++) {
+                        document.write ("&nbsp;&nbsp;");
+                        }      
+                    for (var tam3 = 1; tam3 <= n - j + 1; tam3++) {								
+                        document.write ("*");
+                        }
+                    dem++;						
+                    document.write ("<br>");
+                    }
+                }
+                // Test case bài 5
+                // bai5(5)
+                // bai5(15)
 
             </script>
         </head>
