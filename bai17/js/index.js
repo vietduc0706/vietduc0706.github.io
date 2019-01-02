@@ -6,7 +6,7 @@ function changeFontSize(x) {
 
 function increaseFontSize (paragraph) {
     fontSizeNow = parseInt (document.getElementById(paragraph).style.fontSize.slice(0, document.getElementById(paragraph).style.fontSize.length - 2));
-    if (fontSizeNow >= 29) {
+    if (fontSizeNow >= 30) {
         console.log("Kích thước font chữ quá to!");
         } else {
             document.getElementById(paragraph).style.fontSize = fontSizeNow + 1 + "px";
@@ -34,7 +34,7 @@ function changeBgColor(color) {
     document.body.style.backgroundColor = color;
     }
 
-function copyContent(n1, n2) {
-    let arr = document.getElementsByClassName("doanvan");
-    arr[n1].innerText = arr[n2].innerText;
+function copyContent(paragraph1, paragraph2) {
+    let clone = document.getElementById(paragraph2).innerText;
+    document.getElementById(paragraph1).innerText = clone;
     }
