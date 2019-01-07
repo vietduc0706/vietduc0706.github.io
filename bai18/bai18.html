@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bài 18</title>
+        <link rel="stylesheet" href="css/bai18.css"/>
+        <head>
+    <body>
+        <div id="calculator">
+
+            <div id="screen">
+                <input type="text" id="sub-screen" value=""/>
+
+                <input type="text" id="calculator-screen" value=""/>
+            </div>
+
+            <div id="keys">         
+                <button class="button all-clear first-of-row" onclick="allClear()">AC</button>
+                <button class="button clear" onclick="assign()">AS</button>
+                <button class="button" onclick="del()">⌫</button>
+            
+                <button class="button first-of-row" onclick="clickButton(this)" value="²">x²</button>
+                <button class="button" onclick="clickButton(this)" value="%">%</button>
+                <button class="button" onclick="clickButton(this)" value="!">x!</button>
+                <button class="button" onclick="clickButton(this)" value="/">&divide;</button>
+
+                
+                <button class="button first-of-row" onclick="clickButton(this)" value="7">7</button>
+                <button class="button" onclick="clickButton(this)" value="8">8</button>
+                <button class="button" onclick="clickButton(this)" value="9">9</button>
+                <button class="button" onclick="clickButton(this)" value="*">&times;</button>
+
+            
+                <button class="button first-of-row" onclick="clickButton(this)" value="4">4</button>
+                <button class="button" onclick="clickButton(this)" value="5">5</button>
+                <button class="button" onclick="clickButton(this)" value="6">6</button>
+                <button class="button" onclick="clickButton(this)" value="-">-</button>
+
+            
+                <button class="button first-of-row" onclick="clickButton(this)" value="1">1</button>
+                <button class="button" onclick="clickButton(this)" value="2">2</button>
+                <button class="button" onclick="clickButton(this)" value="3">3</button>
+                <button class="button" onclick="clickButton(this)" value="+">+</button>
+            
+
+                <button class="button first-of-row zero" onclick="clickButton(this)" value="0">0</button>
+                <button class="button" onclick="clickButton(this)" value=".">.</button>            
+                <button class="button equal" onclick="result()">=</button>         
+                </div>
+            </div>
+                
+        <script src="js/bai18.js"></script>
+    </body>
