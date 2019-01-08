@@ -1,3 +1,15 @@
+// Tạo function cho nút CT (change theme)
+let trangThaiGiaoDien = false;
+function changeTheme() {
+    if (trangThaiGiaoDien == false) {
+        $("link")[0].href = "css/bai20-edit.css";
+        trangThaiGiaoDien = true;
+        } else {
+            $("link")[0].href = "css/bai20.css";
+            trangThaiGiaoDien = false;
+            } 
+    }
+
 // Tạo function cho nút AC (xóa sạch)
 function allClear() {
     $("#calculator-screen")[0].value = "";

@@ -3,33 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Bài 19</title>
-        <link rel="stylesheet" href="css/index.css"/>
-        <head>
+        <link rel="stylesheet" href="css/bai19.css"/>
+        </head>
     <body>
-        <div class="traLoiCauHoi">
+        <div id="quiz">
 
-            <div class="khungCauHoi"> <p>Đây là câu hỏi</p>
+            <div id="questionsContainer" style="padding: 10px">
+                <h1 style="text-align: center; color: red;">  Goodluck! </h1>
                 </div>
 
-            <div class="khungCauTraLoi">
-        
-                <button class="cauTraLoi" id="A"><p>Câu trả lời A</p></button>
-                <button class="cauTraLoi" id="B"><p>Câu trả lời B</p></button>
-                <button class="cauTraLoi" id="C"><p>Câu trả lời C</p></button>
-                <button class="cauTraLoi" id="D"><p>Câu trả lời D</p></button>
-          
+            <div id="answersContainer">
+                <button class="answer" id= "A" onclick="clickButton(this)" value="A">A</button>
+                <button class="answer" id= "B" onclick="clickButton(this)" value="B">B</button>
+                <button class="answer" id= "C" onclick="clickButton(this)" value="C">C</button>
+                <button class="answer" id= "D" onclick="clickButton(this)" value="D">D</button>          
                 </div>
             
-            <div class="khungDieuHuong">
-                <button class="nutQuayLai"><p>Quay lại</p></button>
-                <button onclick="next()" class="nutTiepTuc"><p>Tiếp tục</p></button>
+            <div id="navigationContainer">
+                <button class="navigation" id="back" onclick="back()"><p>Quay lại</p></button>
+                <button class="navigation" id="beginOrReset" onclick="beginOrReset()"><p>Bắt đầu/Chơi lại</p></button>
+                <button class="navigation" id="next" onclick="next()"><p>Tiếp tục</p></button>
                 </div>
             
             </div>
 
-        <script src="js/index.js"></script>
-    </body>
-
-
-
-
+        <script src="js/bai19.js"></script>
+        </body>
+    </html>

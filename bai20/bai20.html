@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bài 20</title>
+        <link rel="stylesheet" href="css/bai20.css"/>
+        </head>
+    <body>
+        <div id="calculator" class="calculator">
+
+            <div id="screen" class="calculator__display">
+                <input type="text" id="sub-screen" value=""/>
+
+                <input type="text" id="calculator-screen" value=""/>
+            </div>
+
+            <div id="keys" class="calculator__keys">
+                <button class="button first-of-row change-theme" onclick="changeTheme()">CT</button>         
+                <button class="button var" onclick="assign()">AS</button>
+                <button class="button all-clear" data-action="clear" onclick="allClear()">AC</button>
+                <button class="button" onclick="del()">⌫</button>
+            
+                <button class="button key--operator first-of-row " onclick="clickButton(this)" value="²">x²</button>
+                <button class="button key--operator" onclick="clickButton(this)" value="%">%</button>
+                <button class="button key--operator" onclick="clickButton(this)" value="!">x!</button>
+                <button class="button key--operator" data-action="divide" onclick="clickButton(this)" value="/">&divide;</button>
+
+                
+                <button class="button first-of-row" onclick="clickButton(this)" value="7">7</button>
+                <button class="button" onclick="clickButton(this)" value="8">8</button>
+                <button class="button" onclick="clickButton(this)" value="9">9</button>
+                <button class="button key--operator" data-action="multiply" onclick="clickButton(this)" value="*">&times;</button>
+
+            
+                <button class="button first-of-row" onclick="clickButton(this)" value="4">4</button>
+                <button class="button" onclick="clickButton(this)" value="5">5</button>
+                <button class="button" onclick="clickButton(this)" value="6">6</button>
+                <button class="button key--operator" data-action="subtract" onclick="clickButton(this)" value="-">-</button>
+
+            
+                <button class="button first-of-row" onclick="clickButton(this)" value="1">1</button>
+                <button class="button" onclick="clickButton(this)" value="2">2</button>
+                <button class="button" onclick="clickButton(this)" value="3">3</button>
+                <button class="button key--operator" data-action="add" onclick="clickButton(this)" value="+">+</button>
+            
+
+                <button class="button first-of-row zero" onclick="clickButton(this)" value="0">0</button>
+                <button class="button" data-action="decimal" onclick="clickButton(this)" value=".">.</button>            
+                <button class="button equal key--equal" data-action="calculate" onclick="result()">=</button>         
+                </div>
+            </div>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bai20.js"></script>
+        </body>
+    </html>
