@@ -1,7 +1,7 @@
 // Tạo function cho nút AC (xóa sạch)
 function allClear() {
-    $("#calculator-screen")[0].value = "";
-    $("#sub-screen")[0].value = "";
+    document.getElementById("calculator-screen").value = "";
+    document.getElementById("sub-screen").value = "";
     }
 
 // Tạo function cho nút AS (gán giá trị)
@@ -9,29 +9,29 @@ let trangThaiBien = false;
 let bien = "";
 function assign() {
     if (trangThaiBien == false) {
-        bien = $("#calculator-screen")[0].value;
+        bien = document.getElementById("calculator-screen").value;
         trangThaiBien = true;
-        $("#calculator-screen")[0].value ="";
+        document.getElementById("calculator-screen").value ="";
         } else {
-        let hienThi = $("#calculator-screen")[0].value;
-        $("#calculator-screen")[0].value = hienThi + bien;
+        let hienThi = document.getElementById("calculator-screen").value;
+        document.getElementById("calculator-screen").value = hienThi + bien;
         trangThaiBien = false;
         }
-    $("#sub-screen")[0].value = `var = ${bien}`; 
+    document.getElementById("sub-screen").value = `var = ${bien}`; 
     }
 
 // Tạo function cho nút DEL
 function del() {
-    let hienThi = $("#calculator-screen")[0].value;
-    $("#calculator-screen")[0].value = hienThi.slice(0,hienThi.length - 1);
+    let hienThi = document.getElementById("calculator-screen").value;
+    document.getElementById("calculator-screen").value = hienThi.slice(0,hienThi.length - 1);
     }
 
 // Tạo function cho các nút còn lại
 let ketQua = false;
 function clickButton(button) {
     if (ketQua == false) {
-        let hienThi = $("#calculator-screen")[0].value;
-        $("#calculator-screen")[0].value = hienThi + button.value;
+        let hienThi = document.getElementById("calculator-screen").value;
+        document.getElementById("calculator-screen").value = hienThi + button.value;
         } else {
             if (ketQua == true && (button.value == "1" ||
                                    button.value == "2" ||
@@ -42,7 +42,7 @@ function clickButton(button) {
                                    button.value == "7" ||
                                    button.value == "8" ||
                                    button.value == "9")) {
-                $("#calculator-screen")[0].value = "" + button.value;
+                document.getElementById("calculator-screen").value = "" + button.value;
                 return ketQua = false;
                 }
             if (ketQua == true && (button.value != "1" &&
@@ -54,8 +54,8 @@ function clickButton(button) {
                                    button.value != "7" &&
                                    button.value != "8" &&
                                    button.value != "9")) {
-                let hienThi = $("#calculator-screen")[0].value;
-                $("#calculator-screen")[0].value = hienThi + button.value;
+                let hienThi = document.getElementById("calculator-screen").value;
+                document.getElementById("calculator-screen").value = hienThi + button.value;
                 return ketQua = false;
                 }
         
@@ -64,13 +64,13 @@ function clickButton(button) {
 
 // Tạo function cho nút equal
 function result() {
-    let boNhoTam = $("#calculator-screen")[0].value;
+    let boNhoTam = document.getElementById("calculator-screen").value;
 
     console.log(boNhoTam);
 
-    if ($("#calculator-screen")[0].value.search("²") != -1) {  
-        let i = $("#calculator-screen")[0].value.search("²") - 1;
-        boNhoTam = $("#calculator-screen")[0].value.replace("²","*").slice(0,i+2) + $("#calculator-screen")[0].value[i] + $("#calculator-screen")[0].value.replace("²","*").slice(i+2);
+    if (document.getElementById("calculator-screen").value.search("²") != -1) {  
+        let i = document.getElementById("calculator-screen").value.search("²") - 1;
+        boNhoTam = document.getElementById("calculator-screen").value.replace("²","*").slice(0,i+2) + document.getElementById("calculator-screen").value[i] + document.getElementById("calculator-screen").value.replace("²","*").slice(i+2);
         }
 
     console.log(boNhoTam);
@@ -93,8 +93,7 @@ function result() {
         }
     console.log(boNhoTam);
 
-    $("#calculator-screen")[0].value = eval(boNhoTam);
+    document.getElementById("calculator-screen").value = eval(boNhoTam);
     
     return ketQua = true;
     }
-
