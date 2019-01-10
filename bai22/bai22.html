@@ -1,27 +1,43 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Datepicker - Icon trigger</title>
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#datepicker" ).datepicker({
-      showOn: "button",
-      buttonImage: "images/calendar.gif",
-      buttonImageOnly: true,
-      buttonText: "Select date"
-    });
-  } );
-  </script>
-</head>
-<body>
- 
-<p>Date: <input type="text" id="datepicker"></p>
- 
- 
-</body>
-</html>
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Bài 22</title>
+            <link rel="stylesheet" href="css/bai22.css"/>
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            </head>
+        <body>
+            <div id="registerAccount">
+                <h2> Form đăng ký tài khoản </h2>    
+                <form action="html/registered.html" id="form">
+                    <input type="text" id="fullName" name="fullName" placeholder="Họ tên">
+                    <input type="text" id="birthday" name="birthday" placeholder="Ngày sinh" style="margin-right: 5px">
+                    <span> Giới tính: </span><input type="radio" id="male" name="gender" value="Nam" checked="checked"/><label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="Nữ"/><label for="female">Nữ</label>
+                    <input type="text" id="address" name="address" placeholder="Địa chỉ"/>
+                    <input type="text" id="phone" name="phone" placeholder="Số điện thoại"/>
+                    <input type="text" id="email" name="email" placeholder="Email"/>
+                    <input type="text" id="facebook" name="facebook" placeholder="Facebook"/>
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu"/>
+                    <input type="submit" id="signUp" name="signUp" value="Khởi tạo"/>
+                    </form>
+                </div>
+            <script src="js/jquery-2.2.2.js"></script>
+            <script src="js/bai22.js"></script>
+
+            <!-- Get UI #datepicker -->
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>
+                $( function() {
+                    $("#birthday").datepicker({
+                        showOn: "button",
+                        buttonImage: "img/calendar.png",
+                        buttonImageOnly: true,
+                        buttonText: "Select date"
+                        });
+                    $("#birthday").datepicker("option", "dateFormat", "dd/mm/yy");
+                    } );
+                </script>
+
+            </body>
+        </html>
