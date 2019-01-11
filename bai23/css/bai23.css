@@ -1,0 +1,38 @@
+body {
+    align-items: center;
+    background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+    height: 100vh;
+    }
+
+h1 {
+    text-align: center;
+    color: #0077ff;
+    width: 100%;
+    min-width: 1000px;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    min-width: 1000px;
+    }
+
+th, td {
+    position: relative;
+    border: 1px solid #666;
+    width: 20%;    height: 2em;
+    text-align: center;
+    }
+
+th img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    }
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.37);
+    }
