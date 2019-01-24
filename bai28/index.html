@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 28</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center" style="color: #26a69a; font-family: ArialRoundedMTBold; font-size: 50px;letter-spacing: 2px; color: #26a69a;">KANBAN BOARD</a>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="row">
+            <div class="col m4">
+                <div class="card">
+                    <h5>TO DO</h5>
+                    <div class="collection sorted-list" id="todo" style="overflow: visible!important;">
+                    </div>
+                    <div class="input-field">
+                        <input id="input_text" type="text" data-length="50" onkeydown="addJob(event, 'todo', this)">
+                        <label for="input_text">Add to do</label>
+                            <button class="btn-floating btn-la waves-effect waves-light btn-large" type="button"><i class="material-icons">playlist_add</i></button>
+                        <div class="fix" style="height: 50px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <h5>DOING</h5>
+                    <div class="collection sorted-list" id="doing" style="overflow: visible!important;">
+                    </div>
+                    <div class="input-field">
+                        <input id="input_text" type="text" data-length="50" onkeydown="addJob(event, 'doing', this)">
+                        <label for="input_text">Add doing</label>
+                            <button class="btn-floating btn-la waves-effect waves-light btn-large" type="button"><i class="material-icons">playlist_play</i></button>
+                        <div class="fix" style="height: 50px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m4">
+                <div class="card">
+                    <h5>DONE</h5>
+                    <div class="collection sorted-list" id="done" style="overflow: visible!important;">
+                    </div>
+                    <div class="input-field">
+                            <input id="input_text" type="text" data-length="50" onkeydown="addJob(event, 'done', this)">
+                            <label for="input_text">Add done</label>
+                            <button class="btn-floating btn-la waves-effect waves-light btn-large" type="button"><i class="material-icons">playlist_add_check</i></button>
+                        <div class="fix" style="height: 50px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Modal Structure -->
+    <div id="modal-confirm" class="modal">
+        <div class="modal-content">
+        <h4>Một đi không trở lại</h4>
+        <p>Bạn có chắc chắn muốn xóa công việc này?</p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Thôi không xóa nữa</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="confirm-delete">Xóa thì xóa, sợ gì</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

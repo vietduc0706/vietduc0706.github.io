@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    }
+
+html, body {
+    height: 100%;
+    }
+
+.container {
+    width: 100%;
+    height: 100%; 
+    }
+
+h5 {
+    text-align: center;
+    color: #26a69a;
+    font-family: ArialRoundedMTBold;
+    letter-spacing: 2px;
+    }
+
+.row {
+    padding-top: 5px;
+    padding-bottom: 0;
+    background-image: linear-gradient(180deg, #ec6f75, #acb6e5);
+    height: 500px;
+    }
+
+.card {
+    background-color: #acb6e5;
+    border: 10px solid pink;
+    border-radius: 5px;
+    padding: 0;
+    }
+
+.collection {
+    border: none;
+    }
+
+.collection .collection-item {
+    background-color: #fff;
+    line-height: 1.5rem;
+    padding: 10px 5px;
+    margin: 10px;
+    border: 1px solid pink;
+    border-radius: 5px;
+    }
+
+.collection .collection-item:last-child {
+    border: 1px solid pink;
+    border-radius: 5px;
+    }
+
+.collection .collection-item .btn-floating {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    float: right;
+    display: none;
+    }
+
+.btn-floating.btn-small i {
+    line-height: 20px;
+    font-size: 1rem;
+    }
+
+.collection .collection-item:hover .btn-floating {
+    display:block;  
+    }
+
+.collection .collection-item .delete {
+    float: right;
+    color: red;
+    display: none;
+    }
+
+.collection .collection-item:hover .delete {
+    display:block;
+    }
+
+.ui-state-highlight {
+    background-color: #26a69a;
+    height: cacl(1.5rem + 20px);
+    }
+
+.dragging {
+    -webkit-transform: rotate(5deg);
+    }
+
+.input-field {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+input[type=text]:not(.browser-default) {
+    border: 1px solid #9e9e9e;
+    border-radius: 5px;
+    
+    }   
+
+#input_text {
+    width: 90%;
+    padding: 0px 5px;
+    margin-right: 10px;    
+    }
+
+.input-field>label {
+    padding-left: 15px;
+    }
+
+
+.character-counter {
+    position: absolute;
+    bottom: -15px;
+    right: 5px;
+    color: #26a69a;
+    }
+
+.input-field .btn-floating {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    flex-grow: 1;
+    float: right;
+    display: flex;
+    justify-content: center;
+    }
+
+.btn-floating.btn-large i {
+    line-height: 45px;
+    padding-left: 0.25rem;
+    padding-top: 0.1rem;
+    font-size: 1.5rem;
+    }
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border: 1px solid #26a69a; 
+    box-shadow: none;
+    }
+
+.input-field>label:not(.label-icon).active {
+    transform: translateY(-11px) translateX(15px) scale(0.8);
+    background-color: #acb6e5;
+    padding: 3px;
+    }
