@@ -66,9 +66,11 @@ let addJob = function (e, type, input) {
 
 let pushJob = function (type, pushType) {
   let inputVal = $("." + pushType).val();
+  console.log("inputVal khi pushJob là " + inputVal);
   let item = '<a href="#!" class="collection-item">' + inputVal +
     '<button class="btn-floating btn-small waves-effect waves-light red delete" onclick="deleteJob(this)"><i class="material-icons">delete</i></button> <button class="btn-floating btn-small waves-effect waves-light red edit" onclick="editJob(this)"><i class="material-icons">edit</i></button> </a>';
-  if (event.keyCode === 13 && inputVal.trim() !== "") {
+  console.log("item khi pushJob là " + item);
+  if (inputVal.trim() !== "") {
     list[type].push(inputVal);
     setData(list);
     $('#' + type).append(item);

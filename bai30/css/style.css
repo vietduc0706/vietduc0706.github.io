@@ -44,7 +44,7 @@ span.badge.new {
     }
 
 .card {
-    background-color: #acb6e5d0;
+    background-color: #acb6e5f6;
     border: 10px solid rgba(255, 192, 203, 0.769);
     border-radius: 5px;
     padding: 0;
@@ -170,6 +170,6 @@ input[type=text]:not(.browser-default):focus:not([readonly]) {
 
 .input-field>label:not(.label-icon).active {
     transform: translateY(-11px) translateX(15px) scale(0.8);
-    background-color: #acb6e5;
+    background-color: #acb6e5f6;
     padding: 3px;
     }
