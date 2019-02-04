@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="737117ac-36f9-4543-bfc1-3aeb147ffb1a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/bai24/bai24.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/bai24.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/css/bai24.css" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/css/bai24.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/html/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/html/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/html/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/html/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/html/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/html/newsroom.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/html/newsroom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai24/img/pic9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bai24/img/pic9.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="737117ac-36f9-4543-bfc1-3aeb147ffb1a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +9,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bai26/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-978">
-              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+            <state relative-caret-position="60">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -63,18 +46,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="vietduc0706.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vietduc0706.github.io" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -108,16 +81,17 @@
       <workItem from="1548054461142" duration="2080000" />
       <workItem from="1548057171070" duration="19000" />
       <workItem from="1548057195010" duration="253000" />
+      <workItem from="1548590164435" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2352000" />
+    <option name="totallyTimeSpent" value="2394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27705976" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28109854" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -154,8 +128,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bai26/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-978">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        <state relative-caret-position="60">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
